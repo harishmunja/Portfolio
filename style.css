@@ -1,0 +1,150 @@
+/* style.css */
+
+/* General Reset */
+body, h1, h4, p, a, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu-items a:hover {
+  color: #007BFF;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #495057;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  min-height: 80vh;
+}
+
+.hero .left img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.hero .right h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.hero .right h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero .right h1 span {
+  color: #007BFF;
+}
+
+.hero .right .description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .left, .hero .right {
+    flex: unset;
+    width: 100%;
+  }
+
+  .menu-items a {
+    margin-right: 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
